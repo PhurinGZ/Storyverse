@@ -1,9 +1,6 @@
-"use client"
+// app/page
 
-import { AppSidebar } from "@/components/app-sidebar"
-import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar"
-import { DashboardHeader } from "@/components/dashboard-header"
-import { DashboardContent } from "@/components/dashboard-content"
+"use client"
 
 export default function Dashboard() {
   return (
