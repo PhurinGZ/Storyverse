@@ -3,7 +3,7 @@
 
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-import { BarChart3, Edit3, Users, Clock, Globe, BookOpen, Menu, X, ArrowLeft } from "lucide-react"
+import { BarChart3, Edit3, Users, Clock, Globe, BookOpen, Menu, X, ArrowLeft, Settings } from "lucide-react"
 import Link from "next/link"
 import { usePathname, useParams } from "next/navigation"
 
@@ -26,6 +26,7 @@ export function WorkspaceSidebar({
     { id: "characters", label: "Characters", icon: Users, href: `/workspace/${projectId}/characters` },
     { id: "timeline", label: "Timeline", icon: Clock, href: `/workspace/${projectId}/timeline` },
     { id: "worldbuilding", label: "Worldbuilding", icon: Globe, href: `/workspace/${projectId}/worldbuilding` },
+    { id: "settings", label: "Settings", icon: Settings, href: `/workspace/${projectId}/settings` },
   ]
 
   const isActive = (href: string) => {
