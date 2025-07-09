@@ -12,3 +12,12 @@ export function generateUserPrompt(type: string, prompt: string, length: string,
 
   return `${prompt}\n\n${language === 'thai' ? 'ความยาว' : 'Length'}: ${lengthText}${contextInfo}`;
 }
+
+export function generateSystemPrompt(language: string): string {
+  if (language === 'thai') {
+    return 'กรุณาสร้างเนื้อหาด้วยภาษาที่เหมาะสมสำหรับผู้อ่านชาวไทย';
+  } else {
+    return 'Please generate content suitable for English-speaking readers.';
+  }
+}
+

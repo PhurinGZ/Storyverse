@@ -27,7 +27,7 @@ export default function LoginPage() {
       });
 
       if (res?.ok) {
-        router.push("/");
+        router.push("/projects");
       } else {
         setError("Email หรือ Password ไม่ถูกต้อง");
       }
